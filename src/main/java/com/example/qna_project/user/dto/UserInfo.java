@@ -1,4 +1,4 @@
-package user.domain.dto;
+package com.example.qna_project.user.dto;
 
 import lombok.Builder;
 import lombok.Getter;

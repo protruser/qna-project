@@ -1,4 +1,4 @@
-package user.domain.dto;
+package com.example.qna_project.user.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
@@ -11,7 +11,7 @@ import lombok.Getter;
 public class SignupRequest {
 
     @Size(min = 3, max = 25)
-    @NotEmpty(message = "사용자ID는 필수항목입니다.")
+    @NotEmpty(message = "사용자 ID는 필수항목입니다.")
     private String username;
 
     @NotEmpty(message = "비밀번호는 필수항목입니다.")

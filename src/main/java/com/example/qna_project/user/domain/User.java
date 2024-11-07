@@ -1,4 +1,4 @@
-package user.domain;
+package com.example.qna_project.user.domain;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
@@ -26,8 +26,8 @@ public class User {
 
     @Builder
     public User(String email, String password, String username) {
+        this.username = username;
         this.email = email;
         this.password = password;
-        this.username = username;
     }
 }
